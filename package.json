@@ -1,34 +1,24 @@
 {
-  "_from": "git+https://github.com/Linzdigr/vue-infinite-scroll.git",
-  "_id": "vue-infinite-scroll@2.0.2",
-  "_inBundle": false,
-  "_integrity": "sha1-n6iAVyLGazIxHYSkZ9ZJNkXXGo0=",
-  "_location": "/vue-infinite-scroll",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "git",
-    "raw": "https://github.com/Linzdigr/vue-infinite-scroll.git",
-    "rawSpec": "https://github.com/Linzdigr/vue-infinite-scroll.git",
-    "saveSpec": "git+https://github.com/Linzdigr/vue-infinite-scroll.git",
-    "fetchSpec": "https://github.com/Linzdigr/vue-infinite-scroll.git",
-    "gitCommittish": "master"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "git+https://github.com/Linzdigr/vue-infinite-scroll.git#a6e65e8f372cb4f73c9f951ba0aeb9d067a59585",
-  "_spec": "https://github.com/Linzdigr/vue-infinite-scroll.git",
-  "_where": "/var/www/b3rc.neko-san.fr/resources/assets/js/Neko-San-Vue",
-  "author": {
-    "name": "long.zhang@ele.me"
-  },
-  "bugs": {
-    "url": "https://github.com/ElemeFE/vue-infinite-scroll/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
+  "name": "vue-infinite-scroll",
+  "version": "2.0.2",
   "description": "An infinite scroll directive for vue.js.",
+  "main": "vue-infinite-scroll.js",
+  "jsnext:main": "./src/index.js",
+  "scripts": {
+    "test": "npm run build && xo src/**/* && karma start",
+    "build": "rollup -c",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Linzdigr/vue-infinite-scroll.git"
+  },
+  "keywords": [
+    "infinite-scroll",
+    "vue"
+  ],
+  "author": "long.zhang@ele.me",
+  "license": "MIT",
   "devDependencies": {
     "babel-preset-es2015-rollup": "^3.0.0",
     "jasmine-core": "^2.4.1",
@@ -40,32 +30,11 @@
     "phantomjs-prebuilt": "^2.1.5",
     "rollup": "^0.41.4",
     "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-commonjs": "^8.3.0",
-    "rollup-plugin-env": "^0.21.4",
-    "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-uglify": "1.0.1",
+    "rollup-plugin-node-resolve": "^2.0.0",
     "vue": "^2.0.3",
     "xo": "^0.12.1"
   },
-  "homepage": "https://github.com/ElemeFE/vue-infinite-scroll#readme",
-  "jsnext:main": "./src/index.js",
-  "keywords": [
-    "infinite-scroll",
-    "vue"
-  ],
-  "license": "MIT",
-  "main": "vue-infinite-scroll.js",
-  "name": "vue-infinite-scroll",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ElemeFE/vue-infinite-scroll.git"
-  },
-  "scripts": {
-    "build": "rollup -c",
-    "prepublish": "npm run build",
-    "test": "npm run build && xo src/**/* && karma start"
-  },
-  "version": "2.0.2",
   "xo": {
     "envs": [
       "browser"
